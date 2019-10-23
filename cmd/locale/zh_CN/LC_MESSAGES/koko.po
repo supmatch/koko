@@ -93,6 +93,12 @@ msgid "IP"
 msgstr "IP"
 
 #. i18n.T
+#: pkg/handler/pagination.go:135
+msgid "Env"
+msgstr "环境"
+
+
+#. i18n.T
 #: pkg/handler/pagination.go:133
 msgid "systemUsers"
 msgstr "登录用户"

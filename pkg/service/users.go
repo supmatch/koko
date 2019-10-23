@@ -5,8 +5,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/jumpserver/koko/pkg/logger"
-	"github.com/jumpserver/koko/pkg/model"
+	"github.com/supmatch/koko/pkg/logger"
+	"github.com/supmatch/koko/pkg/model"
 )
 
 type AuthResp struct {

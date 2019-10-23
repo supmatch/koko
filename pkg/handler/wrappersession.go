@@ -7,7 +7,7 @@ import (
 
 	"github.com/gliderlabs/ssh"
 
-	"github.com/jumpserver/koko/pkg/logger"
+	"github.com/supmatch/koko/pkg/logger"
 )
 
 type WrapperSession struct {

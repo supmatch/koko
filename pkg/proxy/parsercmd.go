@@ -6,8 +6,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/jumpserver/koko/pkg/logger"
-	"github.com/jumpserver/koko/pkg/utils"
+	"github.com/supmatch/koko/pkg/logger"
+	"github.com/supmatch/koko/pkg/utils"
 )
 
 var ps1Pattern = regexp.MustCompile(`^\[?.*@.*\]?[\\$#]\s|mysql>\s`)

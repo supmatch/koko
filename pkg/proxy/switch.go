@@ -9,13 +9,13 @@ import (
 
 	uuid "github.com/satori/go.uuid"
 
-	"github.com/jumpserver/koko/pkg/common"
-	"github.com/jumpserver/koko/pkg/config"
-	"github.com/jumpserver/koko/pkg/i18n"
-	"github.com/jumpserver/koko/pkg/logger"
-	"github.com/jumpserver/koko/pkg/model"
-	"github.com/jumpserver/koko/pkg/srvconn"
-	"github.com/jumpserver/koko/pkg/utils"
+	"github.com/supmatch/koko/pkg/common"
+	"github.com/supmatch/koko/pkg/config"
+	"github.com/supmatch/koko/pkg/i18n"
+	"github.com/supmatch/koko/pkg/logger"
+	"github.com/supmatch/koko/pkg/model"
+	"github.com/supmatch/koko/pkg/srvconn"
+	"github.com/supmatch/koko/pkg/utils"
 )
 
 func NewSwitchSession(p *ProxyServer) (sw *SwitchSession) {

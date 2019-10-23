@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jumpserver/koko/pkg/model"
+	"github.com/supmatch/koko/pkg/model"
 )
 
 func NewFileCommandStorage(name string) (storage *FileCommandStorage, err error) {

@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jumpserver/koko/pkg/common"
-	"github.com/jumpserver/koko/pkg/config"
-	"github.com/jumpserver/koko/pkg/i18n"
-	"github.com/jumpserver/koko/pkg/model"
-	"github.com/jumpserver/koko/pkg/service"
-	"github.com/jumpserver/koko/pkg/utils"
+	"github.com/supmatch/koko/pkg/common"
+	"github.com/supmatch/koko/pkg/config"
+	"github.com/supmatch/koko/pkg/i18n"
+	"github.com/supmatch/koko/pkg/model"
+	"github.com/supmatch/koko/pkg/service"
+	"github.com/supmatch/koko/pkg/utils"
 )
 
 func NewAssetPagination(term *utils.Terminal, assets []model.Asset) *AssetPagination {
@@ -132,14 +132,15 @@ func (p *AssetPagination) Start() []model.Asset {
 }
 
 func (p *AssetPagination) displayPageAssets() {
-	Labels := []string{i18n.T("ID"), i18n.T("hostname"), i18n.T("IP"), i18n.T("comment")}
-	fields := []string{"ID", "hostname", "IP", "comment"}
+	Labels := []string{i18n.T("ID"), i18n.T("hostname"), i18n.T("IP"), i18n.T("Env"), i18n.T("comment")}
+	fields := []string{"ID", "hostname", "IP", "Env", "comment"}
 	data := make([]map[string]string, len(p.currentData))
 	for i, j := range p.currentData {
 		row := make(map[string]string)
 		row["ID"] = strconv.Itoa(i + 1)
 		row["hostname"] = j.Hostname
 		row["IP"] = j.IP
+		row["Env"] = j.Env
 
 		comments := make([]string, 0)
 		for _, item := range strings.Split(strings.TrimSpace(j.Comment), "\r\n") {
@@ -163,6 +164,7 @@ func (p *AssetPagination) displayPageAssets() {
 			"ID":       {0, 0, 5},
 			"hostname": {0, 8, 0},
 			"IP":       {0, 15, 40},
+			"Env": 			{0, 0, 5},
 			"comment":  {0, 0, 0},
 		},
 		Data:        data,
@@ -274,8 +276,8 @@ func (p *UserAssetPagination) displayPageAssets() {
 		return
 	}
 
-	Labels := []string{i18n.T("ID"), i18n.T("hostname"), i18n.T("IP"), i18n.T("comment")}
-	fields := []string{"ID", "hostname", "IP", "comment"}
+	Labels := []string{i18n.T("ID"), i18n.T("hostname"), i18n.T("IP"), i18n.T("Env"), i18n.T("comment")}
+	fields := []string{"ID", "hostname", "IP", "Env", "comment"}
 	p.currentData = model.AssetList(p.Data.Data).SortBy(config.GetConf().AssetListSortBy)
 	data := make([]map[string]string, len(p.currentData))
 	for i, j := range p.currentData {
@@ -283,6 +285,7 @@ func (p *UserAssetPagination) displayPageAssets() {
 		row["ID"] = strconv.Itoa(i + 1)
 		row["hostname"] = j.Hostname
 		row["IP"] = j.IP
+		row["Env"] = j.Env
 
 		comments := make([]string, 0)
 		for _, item := range strings.Split(strings.TrimSpace(j.Comment), "\r\n") {
@@ -335,6 +338,7 @@ func (p *UserAssetPagination) displayPageAssets() {
 			"ID":       {0, 0, 5},
 			"hostname": {0, 8, 0},
 			"IP":       {0, 15, 40},
+			"Env": 			{0, 0, 5},
 			"comment":  {0, 0, 0},
 		},
 		Data:        data,

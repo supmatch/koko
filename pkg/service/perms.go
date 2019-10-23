@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/jumpserver/koko/pkg/logger"
-	"github.com/jumpserver/koko/pkg/model"
+	"github.com/supmatch/koko/pkg/logger"
+	"github.com/supmatch/koko/pkg/model"
 )
 
 func GetUserAssets(userID, search string, pageSize, offset int) (resp model.AssetsPaginationResponse) {

@@ -88,6 +88,7 @@ type Asset struct {
 	ID              string       `json:"id"`
 	Hostname        string       `json:"hostname"`
 	IP              string       `json:"ip"`
+	Env							string			 `json:"envname"`
 	Os              string       `json:"os"`
 	Domain          string       `json:"domain"`
 	Platform        string       `json:"platform"`

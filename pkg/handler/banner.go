@@ -6,10 +6,10 @@ import (
 	"io"
 	"text/template"
 
-	"github.com/jumpserver/koko/pkg/config"
-	"github.com/jumpserver/koko/pkg/i18n"
-	"github.com/jumpserver/koko/pkg/logger"
-	"github.com/jumpserver/koko/pkg/utils"
+	"github.com/supmatch/koko/pkg/config"
+	"github.com/supmatch/koko/pkg/i18n"
+	"github.com/supmatch/koko/pkg/logger"
+	"github.com/supmatch/koko/pkg/utils"
 )
 
 var defaultTitle string

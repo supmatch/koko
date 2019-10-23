@@ -9,8 +9,8 @@ import (
 
 	"github.com/gorilla/mux"
 	gorillaws "github.com/gorilla/websocket"
-	"github.com/jumpserver/koko/pkg/config"
-	"github.com/jumpserver/koko/pkg/logger"
+	"github.com/supmatch/koko/pkg/config"
+	"github.com/supmatch/koko/pkg/logger"
 	"github.com/kataras/neffos"
 	"github.com/kataras/neffos/gorilla"
 )
