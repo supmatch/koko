@@ -11,7 +11,7 @@ import (
 
 	"github.com/sevlyar/go-daemon"
 
-	"github.com/supmatch/koko/pkg/koko"
+	"github.com/jumpserver/koko/pkg/koko"
 )
 
 func startAsDaemon() {

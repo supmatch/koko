@@ -7,13 +7,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/supmatch/koko/pkg/config"
+	"github.com/jumpserver/koko/pkg/config"
 	"github.com/supmatch/koko/pkg/i18n"
-	"github.com/supmatch/koko/pkg/logger"
+	"github.com/jumpserver/koko/pkg/logger"
 	"github.com/supmatch/koko/pkg/model"
-	"github.com/supmatch/koko/pkg/service"
-	"github.com/supmatch/koko/pkg/srvconn"
-	"github.com/supmatch/koko/pkg/utils"
+	"github.com/jumpserver/koko/pkg/service"
+	"github.com/jumpserver/koko/pkg/srvconn"
+	"github.com/jumpserver/koko/pkg/utils"
 )
 
 type ProxyServer struct {

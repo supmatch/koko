@@ -6,7 +6,7 @@ import (
 
 	"github.com/leonelquinteros/gotext"
 
-	"github.com/supmatch/koko/pkg/config"
+	"github.com/jumpserver/koko/pkg/config"
 )
 
 func Initial()() {

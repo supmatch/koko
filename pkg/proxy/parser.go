@@ -6,9 +6,9 @@ import (
 	"sync"
 
 	"github.com/supmatch/koko/pkg/i18n"
-	"github.com/supmatch/koko/pkg/logger"
+	"github.com/jumpserver/koko/pkg/logger"
 	"github.com/supmatch/koko/pkg/model"
-	"github.com/supmatch/koko/pkg/utils"
+	"github.com/jumpserver/koko/pkg/utils"
 )
 
 var (

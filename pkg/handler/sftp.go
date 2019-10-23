@@ -11,11 +11,11 @@ import (
 	"github.com/gliderlabs/ssh"
 	"github.com/pkg/sftp"
 
-	"github.com/supmatch/koko/pkg/cctx"
-	"github.com/supmatch/koko/pkg/logger"
-	"github.com/supmatch/koko/pkg/model"
-	"github.com/supmatch/koko/pkg/service"
-	"github.com/supmatch/koko/pkg/srvconn"
+	"github.com/jumpserver/koko/pkg/cctx"
+	"github.com/jumpserver/koko/pkg/logger"
+	"github.com/jumpserver/koko/pkg/model"
+	"github.com/jumpserver/koko/pkg/service"
+	"github.com/jumpserver/koko/pkg/srvconn"
 )
 
 func SftpHandler(sess ssh.Session) {

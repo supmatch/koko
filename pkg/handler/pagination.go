@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/supmatch/koko/pkg/common"
-	"github.com/supmatch/koko/pkg/config"
+	"github.com/jumpserver/koko/pkg/common"
+	"github.com/jumpserver/koko/pkg/config"
 	"github.com/supmatch/koko/pkg/i18n"
 	"github.com/supmatch/koko/pkg/model"
-	"github.com/supmatch/koko/pkg/service"
-	"github.com/supmatch/koko/pkg/utils"
+	"github.com/jumpserver/koko/pkg/service"
+	"github.com/jumpserver/koko/pkg/utils"
 )
 
 func NewAssetPagination(term *utils.Terminal, assets []model.Asset) *AssetPagination {

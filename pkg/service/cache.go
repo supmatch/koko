@@ -3,7 +3,7 @@ package service
 import (
 	"sync"
 
-	"github.com/supmatch/koko/pkg/model"
+	"github.com/jumpserver/koko/pkg/model"
 )
 
 type assetsCacheContainer struct {

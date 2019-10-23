@@ -3,7 +3,7 @@ package httpd
 import (
 	"sync"
 
-	"github.com/supmatch/koko/pkg/logger"
+	"github.com/jumpserver/koko/pkg/logger"
 )
 
 var conns = &Connections{container: make(map[string][]string), mu: new(sync.RWMutex)}

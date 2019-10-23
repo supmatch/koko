@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/supmatch/koko/pkg/model"
-	"github.com/supmatch/koko/pkg/service"
+	"github.com/jumpserver/koko/pkg/service"
 )
 
 type ServerCommandStorage struct {

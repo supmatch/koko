@@ -3,7 +3,7 @@ package proxy
 import (
 	"io"
 
-	"github.com/supmatch/koko/pkg/logger"
+	"github.com/jumpserver/koko/pkg/logger"
 )
 
 type Transport interface {
