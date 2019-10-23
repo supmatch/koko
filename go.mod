@@ -1,4 +1,4 @@
-module github.com/jumpserver/koko
+module github.com/supmatch/koko
 
 go 1.12
 
